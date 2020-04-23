@@ -1,0 +1,13 @@
+{
+    "name": "thecodemill/blade-bootstrap",
+    "description": "A collection of Laravel Blade templates for Bootstrap integration.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Robinson",
+            "email": "andrew@thecodemill.co.uk"
+        }
+    ],
+    "require": {}
+}
