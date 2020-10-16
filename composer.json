@@ -9,5 +9,20 @@
             "email": "andrew@thecodemill.co.uk"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": ">=6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheCodeMill\\BladeBootstrap\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheCodeMill\\BladeBootstrap\\ServiceProvider"
+            ]
+        }
+    }
 }
