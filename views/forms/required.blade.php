@@ -1,0 +1,1 @@
+<span class="form-field-required text-danger">* <span class="sr-only">({{ trans('common.required') }})</span></span>
