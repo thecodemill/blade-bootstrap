@@ -1,5 +1,6 @@
 <form
-    @if(@$class) class="{{ $class }}" @endif
+    @isset($id) id="{{ $id }}" @endisset
+    @isset($class) class="{{ $class }}" @endisset
     method="{{ @$method == 'get' ? 'get' : 'post' }}"
     action="{{ @$action ?: '#' }}"
     enctype="multipart/form-data"

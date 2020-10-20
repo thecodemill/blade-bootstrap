@@ -1,6 +1,7 @@
 <label
-    @if(@$for) for="{{ str_replace(['[', ']'], ['-', ''], $for) }}" @endif
-    @if(@$class) class="{{ $class }}" @endif
+    @isset($for) for="{{ str_replace(['[', ']'], ['-', ''], $for) }}" @endisset
+    @isset($id) id="{{ $id }}" @endisset
+    @isset($class) class="{{ $class }}" @endisset
     @foreach((array) @$attrs as $attrName => $attrValue)
         @if(is_int($attrName))
             {{ $attrValue }}

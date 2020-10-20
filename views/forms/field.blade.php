@@ -1,6 +1,6 @@
 @component('bbs::forms.group', [
     'class' => trim((in_array(@$field['type'], ['checkbox', 'radio']) ? 'custom-control custom-' . $field['type'] . ' ' : '') . ' ' . (@$group['class'] ?: @$field['class'])) . (@$field['required'] ? ' required' : '') . (@$field['error'] ? ' has-error ' : ''),
-])
+] + (array) @$group)
 
     {{ @$pre }}
 

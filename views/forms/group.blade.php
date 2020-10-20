@@ -1,4 +1,5 @@
 <div
+    @isset($id) id="{{ $id }}" @endisset
     class="{{ trim('form-group ' . @$class . ' ' . (@$required ? 'required' : '')) }}"
     @foreach((array) @$attrs as $attrName => $attrValue)
         @if(is_int($attrName))
