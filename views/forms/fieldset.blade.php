@@ -10,7 +10,7 @@
     @endforeach
 >
     @isset($legend)
-        @include('bs::forms.legend', ['slot' => $legend])
+        @include('bbs::forms.legend', ['slot' => $legend])
     @endif
 
     {{ @$slot }}
